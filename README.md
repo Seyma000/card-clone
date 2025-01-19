@@ -14,7 +14,7 @@ Bu proje, modern bir **Card UI** tasarımı ve işlevselliğini taklit eden bir 
 
 Uygulamayı çalışırken görmek için aşağıdaki YouTube bağlantısını ziyaret edebilirsiniz:
 
-[![Proje Videosu](https://www.youtube.com/watch?v=u6ylRpsZGT4)
+[![Proje Videosu](https://img.youtube.com/vi/u6ylRpsZGT4/0.jpg)](https://www.youtube.com/watch?v=u6ylRpsZGT4)
 
 > **Not:** Yukarıdaki bağlantıyı tıklayarak YouTube üzerinde uygulamanın nasıl çalıştığını izleyebilirsiniz.
 
