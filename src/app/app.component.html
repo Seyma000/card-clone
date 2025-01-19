@@ -1,0 +1,350 @@
+<main
+class="container rounded-lg mx-auto mt-20 max-w-7xl max-h-[500px] bg-gray-900 text-white"
+>
+
+<div class="card-page">
+<!-- app.component.html -->
+<div 
+class="card-container overflow-hidden rounded-lg mt-20" 
+style="transform: perspective(700px) rotateX(0deg) rotateY(0deg)" 
+(mousemove)="showShineEffect($event)" 
+(mouseout)="hideShineEffect()"
+[style.transform]="cardTransform">
+
+
+<!-- Shine efektini burada dinamik olarak ekle -->
+<div 
+class="shine z-10" 
+[style.opacity]="isShineVisible ? 1 : 0" 
+[style.transform]="'translate(' + shineX + 'px, ' + shineY + 'px)'">
+</div>
+
+  <div
+    _ngcontent-ng-c3305908847=""
+    class="sponsor-card flex rounded-lg border relative justify-between h-full flex-row">
+
+
+    <div
+      _ngcontent-ng-c3305908847=""
+      class="w-1/2 sponsord-card-left-box z-30">
+      
+      <div
+        _ngcontent-ng-c3305908847=""
+        class="flex flex-col justify-between p-16 h-full"
+      >
+        <p
+          _ngcontent-ng-c3305908847=""
+          class="font-medium leading-8 mb-6 mt-0"
+        >
+          <em _ngcontent-ng-c3305908847="">Github Sponsors</em> lets you
+          support your favorite open source maintainers and projects.
+        </p>
+        <div _ngcontent-ng-c3305908847="">
+          <a
+            _ngcontent-ng-c3305908847=""
+            href="#"
+            class="sponsor-link font-bold pt-1 pb-1"
+          >
+            Invest with Github Sponsors
+            <i _ngcontent-ng-c3305908847="" class="arrow-icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sağ taraf -->
+    <div _ngcontent-ng-c3305908847="" class="w-1/2 overflow-hidden z-20" >
+      <div _ngcontent-ng-c3305908847=""
+        class="grid grid-cols-2 sm:grid-cols-3 gap-1 sponsor-cards-list">
+        
+        <div _ngcontent-ng-c3305908847="" class="w-full single-card">
+          <a
+            _ngcontent-ng-c3305908847=""
+            target="_blank"
+            class="rounded p-4 border flex no-underline flex-col items-center m-2 custom-shadow"
+            href="#"
+            ><img
+              _ngcontent-ng-c3305908847=""
+              width="96"
+              height="96"
+              alt=""
+              class="block"
+              src="https://github.githubassets.com/assets/dayhaysoos-c50659cac73b.jpeg"
+            />
+            <div _ngcontent-ng-c3305908847="" class="my-2">
+              NickDe Jesus
+            </div>
+            <button _ngcontent-ng-c3305908847="">
+              <span _ngcontent-ng-c3305908847="" class="button-content"
+                ><span _ngcontent-ng-c3305908847="" class="button-visual"
+                  ><i
+                    _ngcontent-ng-c3305908847=""
+                    class="heart-icon"
+                  ></i></span
+                ><span _ngcontent-ng-c3305908847="" class="button-label"
+                  >Sponsor</span
+                ></span
+              >
+            </button></a
+          >
+        </div>
+        <div _ngcontent-ng-c3305908847="" class="w-full single-card">
+          <a
+            _ngcontent-ng-c3305908847=""
+            target="_blank"
+            class="rounded p-4 border flex no-underline flex-col items-center m-2 custom-shadow"
+            href="#"
+            ><img
+              _ngcontent-ng-c3305908847=""
+              width="96"
+              height="96"
+              alt=""
+              class="block"
+              src="https://github.githubassets.com/assets/dayhaysoos-c50659cac73b.jpeg"
+            />
+            <div _ngcontent-ng-c3305908847="" class="my-2">
+              NickDe Jesus
+            </div>
+            <button _ngcontent-ng-c3305908847="">
+              <span _ngcontent-ng-c3305908847="" class="button-content"
+                ><span _ngcontent-ng-c3305908847="" class="button-visual"
+                  ><i
+                    _ngcontent-ng-c3305908847=""
+                    class="heart-icon"
+                  ></i></span
+                ><span _ngcontent-ng-c3305908847="" class="button-label"
+                  >Sponsor</span
+                ></span
+              >
+            </button></a
+          >
+        </div>
+        <div _ngcontent-ng-c3305908847="" class="w-full single-card">
+          <a
+            _ngcontent-ng-c3305908847=""
+            target="_blank"
+            class="rounded p-4 border flex no-underline flex-col items-center m-2 custom-shadow"
+            href="#"
+            ><img
+              _ngcontent-ng-c3305908847=""
+              width="96"
+              height="96"
+              alt=""
+              class="block"
+              src="https://github.githubassets.com/assets/dayhaysoos-c50659cac73b.jpeg"
+            />
+            <div _ngcontent-ng-c3305908847="" class="my-2">
+              NickDe Jesus
+            </div>
+            <button _ngcontent-ng-c3305908847="">
+              <span _ngcontent-ng-c3305908847="" class="button-content"
+                ><span _ngcontent-ng-c3305908847="" class="button-visual">
+                  <i _ngcontent-ng-c3305908847=""
+                    class="heart-icon">
+                </i></span>
+                  <span _ngcontent-ng-c3305908847="" class="button-label"
+                  >Sponsor</span>
+                </span>
+            </button></a>
+        </div>
+        <div _ngcontent-ng-c3305908847="" class="w-full single-card">
+          <a
+            _ngcontent-ng-c3305908847=""
+            target="_blank"
+            class="rounded p-4 border flex no-underline flex-col items-center m-2 custom-shadow"
+            href="#"
+            ><img
+              _ngcontent-ng-c3305908847=""
+              width="96"
+              height="96"
+              alt=""
+              class="block"
+              src="https://github.githubassets.com/assets/dayhaysoos-c50659cac73b.jpeg"
+            />
+            <div _ngcontent-ng-c3305908847="" class="my-2">
+              NickDe Jesus
+            </div>
+            <button _ngcontent-ng-c3305908847="">
+              <span _ngcontent-ng-c3305908847="" class="button-content"
+                ><span _ngcontent-ng-c3305908847="" class="button-visual"
+                  ><i
+                    _ngcontent-ng-c3305908847=""
+                    class="heart-icon"
+                  ></i></span
+                ><span _ngcontent-ng-c3305908847="" class="button-label"
+                  >Sponsor</span
+                ></span
+              >
+            </button></a
+          >
+        </div>
+        <div _ngcontent-ng-c3305908847="" class="w-full single-card">
+          <a
+            _ngcontent-ng-c3305908847=""
+            target="_blank"
+            class="rounded p-4 border flex no-underline flex-col items-center m-2 custom-shadow"
+            href="#"
+            ><img
+              _ngcontent-ng-c3305908847=""
+              width="96"
+              height="96"
+              alt=""
+              class="block"
+              src="https://github.githubassets.com/assets/dayhaysoos-c50659cac73b.jpeg"
+            />
+            <div _ngcontent-ng-c3305908847="" class="my-2">
+              NickDe Jesus
+            </div>
+            <button _ngcontent-ng-c3305908847="">
+              <span _ngcontent-ng-c3305908847="" class="button-content"
+                ><span _ngcontent-ng-c3305908847="" class="button-visual"
+                  ><i
+                    _ngcontent-ng-c3305908847=""
+                    class="heart-icon"
+                  ></i></span
+                ><span _ngcontent-ng-c3305908847="" class="button-label"
+                  >Sponsor</span
+                ></span
+              >
+            </button></a
+          >
+        </div>
+        <div _ngcontent-ng-c3305908847="" class="w-full single-card">
+          <a
+            _ngcontent-ng-c3305908847=""
+            target="_blank"
+            class="rounded p-4 border flex no-underline flex-col items-center m-2 custom-shadow"
+            href="#"
+            ><img
+              _ngcontent-ng-c3305908847=""
+              width="96"
+              height="96"
+              alt=""
+              class="block"
+              src="https://github.githubassets.com/assets/dayhaysoos-c50659cac73b.jpeg"
+            />
+            <div _ngcontent-ng-c3305908847="" class="my-2">
+              NickDe Jesus
+            </div>
+            <button _ngcontent-ng-c3305908847="">
+              <span _ngcontent-ng-c3305908847="" class="button-content"
+                ><span _ngcontent-ng-c3305908847="" class="button-visual"
+                  ><i
+                    _ngcontent-ng-c3305908847=""
+                    class="heart-icon"
+                  ></i></span
+                ><span _ngcontent-ng-c3305908847="" class="button-label"
+                  >Sponsor</span
+                ></span
+              >
+            </button></a
+          >
+        </div>
+        <div _ngcontent-ng-c3305908847="" class="w-full single-card">
+          <a
+            _ngcontent-ng-c3305908847=""
+            target="_blank"
+            class="rounded p-4 border flex no-underline flex-col items-center m-2 custom-shadow"
+            href="#"
+            ><img
+              _ngcontent-ng-c3305908847=""
+              width="96"
+              height="96"
+              alt=""
+              class="block"
+              src="https://github.githubassets.com/assets/dayhaysoos-c50659cac73b.jpeg"
+            />
+            <div _ngcontent-ng-c3305908847="" class="my-2">
+              NickDe Jesus
+            </div>
+            <button _ngcontent-ng-c3305908847="">
+              <span _ngcontent-ng-c3305908847="" class="button-content"
+                ><span _ngcontent-ng-c3305908847="" class="button-visual"
+                  ><i
+                    _ngcontent-ng-c3305908847=""
+                    class="heart-icon"
+                  ></i></span
+                ><span _ngcontent-ng-c3305908847="" class="button-label"
+                  >Sponsor</span
+                ></span
+              >
+            </button></a
+          >
+        </div>
+        <div _ngcontent-ng-c3305908847="" class="w-full single-card">
+          <a
+            _ngcontent-ng-c3305908847=""
+            target="_blank"
+            class="rounded p-4 border flex no-underline flex-col items-center m-2 custom-shadow"
+            href="#"
+            ><img
+              _ngcontent-ng-c3305908847=""
+              width="96"
+              height="96"
+              alt=""
+              class="block"
+              src="https://github.githubassets.com/assets/dayhaysoos-c50659cac73b.jpeg"
+            />
+            <div _ngcontent-ng-c3305908847="" class="my-2">
+              NickDe Jesus
+            </div>
+            <button _ngcontent-ng-c3305908847="">
+              <span _ngcontent-ng-c3305908847="" class="button-content"
+                ><span _ngcontent-ng-c3305908847="" class="button-visual"
+                  ><i
+                    _ngcontent-ng-c3305908847=""
+                    class="heart-icon"
+                  ></i></span
+                ><span _ngcontent-ng-c3305908847="" class="button-label"
+                  >Sponsor</span
+                ></span
+              >
+            </button></a
+          >
+        </div>
+        <div _ngcontent-ng-c3305908847="" class="w-full single-card">
+          <a
+            _ngcontent-ng-c3305908847=""
+            target="_blank"
+            class="rounded p-4 border flex no-underline flex-col items-center m-2 custom-shadow"
+            href="#"
+            ><img
+              _ngcontent-ng-c3305908847=""
+              width="96"
+              height="96"
+              alt=""
+              class="block"
+              src="https://github.githubassets.com/assets/dayhaysoos-c50659cac73b.jpeg"
+            />
+            <div _ngcontent-ng-c3305908847="" class="my-2">
+              NickDe Jesus
+            </div>
+            <button _ngcontent-ng-c3305908847="">
+              <span _ngcontent-ng-c3305908847="" class="button-content"
+                ><span _ngcontent-ng-c3305908847="" class="button-visual"
+                  ><i
+                    _ngcontent-ng-c3305908847=""
+                    class="heart-icon"
+                  ></i></span
+                ><span _ngcontent-ng-c3305908847="" class="button-label"
+                  >Sponsor</span
+                ></span
+              >
+            </button></a
+          >
+        </div>
+
+
+       
+
+      </div>
+      
+    </div>
+    
+  </div>
+ 
+</div>
+
+ <div _ngcontent-ng-c3024441535="" class="flex justify-center mt-10"><button _ngcontent-ng-c3024441535="" class="bg-red-500 text-white rounded-lg p-2">Logout</button></div>
+</div>
+</main>

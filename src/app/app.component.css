@@ -1,0 +1,412 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a202c;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  
+  height: 100vh; /* Optional: Centers the button within the viewport */
+  position: relative;
+ 
+ 
+}
+
+
+.card-container {
+  background-color: #2d3748;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  width: 1200px;
+}
+.card-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(44, 42, 42, 0.3);
+}
+.card-container:hover .shine {
+  opacity: 1;
+}
+.shine {
+  position: absolute;
+  inset: 0;
+  width: 240px;
+  height: 160px;
+  background-color: #f778ba;
+  filter: blur(180px);
+  border-radius: 1px;
+  opacity: 0;
+  transition: opacity .5s cubic-bezier(.5,1,.7,1);
+  z-index: 1;
+}
+
+.rounded-lg {
+  border-radius: .5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.mt-20 {
+  margin-top: 2rem;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+.border[_ngcontent-ng-c3305908847] {
+  border: 1px solid #30363d;
+}
+
+.sponsor-card {
+  display: flex;
+  background: rgba(26, 32, 44, 0.8);
+  border: 1px solid #4a5568;
+  border-radius: 12px;
+  
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.p-16 {
+  padding: 4rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.pt-1 {
+  padding-top: .25rem;
+}
+
+.pb-1 {
+  padding-bottom: .25rem;
+}
+
+.m-2 {
+  margin: .5rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.my-2 {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+p[_ngcontent-ng-c3305908847] {
+  color: #ebf5ff80 !important;
+  line-height: 32px !important;
+  font-size: 24px;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+  margin: 0;
+}
+
+em[_ngcontent-ng-c3305908847] {
+  color: #e6edf3;
+  font-style: normal !important;
+}
+
+
+
+.sponsord-card-left-box a {
+  color: #e6edf3;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 20px;
+  line-height: 28px;
+  width: fit-content;
+  transition-delay: 0ms;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.arrow-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url(./media/arrow-NJ2HSQOQ.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.sponsord-card-left-box a {
+  position: relative; /* To position the line relative to the link */
+}
+
+.sponsord-card-left-box a:hover .arrow-icon {
+  background-image: url("./media/arrow-hover-VMPGS6IC.svg");
+  line-height: normal;
+}
+
+/* Add the line under the text */
+.sponsord-card-left-box a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Adjust this value to position the line closer or further from the text */
+  left: 0; /* Start the line from the left */
+  width: 0; /* Initially the line width is 0 */
+  height: 2px;
+  background-color: #e6edf3; /* Set the line color */
+  transform: scaleX(0); /* Initially hide the line */
+  transform-origin: left; /* Make the line grow from the left */
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.sponsord-card-left-box a:hover::after {
+  width: 100%; /* Make the line expand to full width on hover */
+  transform: scaleX(1); /* Display the line when the link is hovered */
+}
+.sponsor-cards-list[_ngcontent-ng-c3305908847] {
+  max-height: 480px;
+  transform: rotate(-15deg) translateZ(10px);
+  top: -128px !important;
+  right: -24px !important;
+  padding: 24px !important;
+  margin-top: calc(-1 * var(1.5rem, 24px)) !important;
+  position: relative;
+  flex-wrap: wrap !important;
+}
+
+.sponsor-cards-list[_ngcontent-ng-c3305908847] img[_ngcontent-ng-c3305908847] {
+  border-radius: 50% !important;
+  border-style: none !important;
+}
+
+
+.gap-1 {
+  gap: .25rem;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.sm\:grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.w-full {
+  width: 100%;
+}
+
+/* Logout düğmesi */
+button.bg-red-500 {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e53e3e;
+  padding: 10px 20px;
+  margin-top: 2rem;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+button.bg-red-500:hover {
+  background-color: #c53030;
+}
+
+.custom-shadow[_ngcontent-ng-c3305908847] {
+  box-shadow: 0 2.75px 2.21px #00000012, 0 6.65px 5.32px #0000000b, 0 12.5px 10px #00000008, 0 22px 18px #00000008, 0 42px 33.4px #00000005, 0 100px 80px #00000004 !important;
+}
+
+.no-underline {
+  text-decoration-line: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.single-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.single-card div {
+  color: #ebf5ff80 !important;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.single-card button {
+  background-color: #21262d;
+    align-items: center;
+    border: 1px solid #30363d;
+    border-radius: .375rem;
+    color: #c9d1d9;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row;
+    font-size: .875rem;
+    font-weight: 500;
+    gap: .25rem;
+    height: 2rem;
+    min-width: max-content;
+    justify-content: space-between;
+    padding: 0 .75rem;
+    position: relative;
+    text-align: center;
+}
+
+.button-content {
+    align-items: center;
+    display: grid;
+    flex: 1 0 auto;
+    grid-template-columns: min-content minmax(0, auto) min-content;
+    place-content: center;
+    background-color: initial;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border-color: #0000;
+  }
+ 
+  .single-card button:hover {
+    background-color: #30363d;
+    /* Add any other styles you want to apply when the button is hovered */
+  }
+  
+.button-visual[_ngcontent-ng-c3305908847] {
+  margin-right: .5rem;
+  display: flex;
+  pointer-events: none;
+}
+
+.heart-icon {
+  display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(./media/heart-icon-ZENFI736.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.single-card button:hover .heart-icon { 
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('https://github.githubassets.com/images/icons/emoji/unicode/2764.png') no-repeat center;
+  background-size: contain;
+
+}
+
+.shine[_ngcontent-ng-c3305908847] {
+  position: absolute;
+  inset: 0;
+  width: 240px;
+  height: 160px;
+  background-color: #f778ba;
+  filter: blur(180px);
+  border-radius: 1px;
+  opacity: 0;
+  transition: opacity .5s cubic-bezier(.5,1,.7,1);
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  vertical-align: middle;
+}
+
+.block {
+  display: block;
+}
+
+button, [role=button] {
+  cursor: pointer;
+}
+
+button, input:where([type=button]), input:where([type=reset]), input:where([type=submit]) {
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+}
+
+button, select {
+  text-transform: none;
+}
