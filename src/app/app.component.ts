@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   imports: [RouterOutlet, CommonModule, FormsModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
   title = 'card-clone';
@@ -24,18 +24,23 @@ export class AppComponent {
 
   // Fareyle üzerine gelindiğinde shine efektini göster
   showShineEffect(event: MouseEvent) {
-    this.isShineVisible = true;
     const rect = (event.target as HTMLElement).getBoundingClientRect();
+    this.isShineVisible = true;
+
+    // Shine X ve Y koordinatlarını hesapla
     this.shineX = event.clientX - rect.left;
     this.shineY = event.clientY - rect.top;
 
-    // Kart dönüşümü
-    this.cardTransform = `perspective(700px) rotateX(${(this.shineY - rect.top) / 200}deg) rotateY(${(this.shineX - rect.left) / 200}deg)`;
+    // Kart dönüşümünü ayarla
+    const rotateX = (this.shineY - rect.height / 2) / 10;
+    const rotateY = (this.shineX - rect.width / 2) / 10;
+    this.cardTransform = `perspective(700px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
   }
 
   // Fareyle karttan çıktığında shine efektini gizle
   hideShineEffect() {
     this.isShineVisible = false;
+
     // Kart dönüşümünü sıfırla
     this.cardTransform = 'perspective(700px) rotateX(0deg) rotateY(0deg)';
   }
@@ -43,9 +48,9 @@ export class AppComponent {
   // Kartlar üzerinde shine efektinin konumunu güncelle
   getShineStyle() {
     return {
-      left: `${this.shineX - 120}px`, // Shine efektini kartın üzerine yerleştir
-      top: `${this.shineY - 80}px`, // Shine efektinin Y koordinatını ayarla
-      opacity: this.isShineVisible ? 1 : 0
+      left: `${this.shineX - 50}px`, // Shine efektini kartın üzerine yerleştir
+      top: `${this.shineY - 50}px`, // Shine efektinin Y koordinatını ayarla
+      opacity: this.isShineVisible ? 1 : 0,
     };
   }
 }
